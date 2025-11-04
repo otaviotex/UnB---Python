@@ -83,30 +83,3 @@ def criar_banco():
     Base.metadata.create_all(bind=db)
     print("Banco de dados criado com sucesso!")
 
-#CRUD
-
-#create
-# usuario = Usuario(nome="Otavio", email="Otavio@gmail.com", senha="124")
-# session.add(usuario)
-# session.commit()
-
-#read
-# lista_usuarios = session.query(Usuario).all()
-# usuario_otavio = session.query(Usuario).filter_by(email="Otavio@gmail.com").first()
-# print(usuario_otavio.id)
-# print(usuario_otavio.nome)
-# print(usuario_otavio.email)
-
-
-#livro = Livro(titulo="Berlim", qtd_pags="356", dono= usuario_lais.id)
-# session.add(livro)
-# session.commit()
-
-#update
-# usuario_otavio.nome = "Otavio Teixeira"
-# session.add(usuario_otavio)
-# session.commit()
-
-#delete
-# session.delete(usuario_otavio)
-# session.commit()
