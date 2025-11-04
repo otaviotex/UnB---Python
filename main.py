@@ -28,6 +28,7 @@ def main():
     
     print("\n[1] Marcar Consulta")
     print("[2] Área do Médico")
+    print("[3] Sair")
     
     try:
       opc = int(input("Escolha uma opcao: "))
@@ -35,8 +36,8 @@ def main():
       print("Digite um numero valido")
       continue
         
-    if opc < 1 or opc > 2:
-      print("Escolha o numero 1 ou 2!")
+    if opc < 1 or opc > 3:
+      print("Escolha o numero 1 ao 3!")
       continue
     
     clear()
@@ -267,5 +268,7 @@ Digite a opcao  de horario escolhida(HH:MM):
             case 3: 
               print("Saindo do Sistema...\n")
               break
-            
+      case 3:
+        print("Saindo do Sistema...\n")
+        break      
 main()
